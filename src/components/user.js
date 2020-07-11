@@ -22,7 +22,7 @@ class User extends Component {
                 labelText:'lastName',
                 config:{
                     name:'name_input',
-                    text:'text',
+                    type:'text',
                     placeholder:  'Enter your  Last name'
                 }
             }
