@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+//uncontrolled didn't use state --and it's more js like
 class Uncontrolled extends Component {
 
    
