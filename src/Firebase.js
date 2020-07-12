@@ -15,6 +15,26 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const firebaseDB = firebase.database();
+//for authentication
+const googleAuth = new firebase.auth.GoogleAuthProvider();
+
+export {
+  firebase,
+  firebaseDB,
+  googleAuth
+}
+// firebaseDB.ref('users').push(
+//   { 
+//     name:'Mosa',
+//     lastname:'Dee'
+//   }
+// )
+// firebaseDB.ref('users/-MBz9XzXWfi6TGkAxuh4').once('value')
+// .then((snapshot)=>{
+//   console.log(snapshot.val());
+// })
+
+
 //
 //firebaseDB.ref('eyes').remove()--remove a data
 //firebaseDB.ref('eyes').update()--update a data
@@ -50,6 +70,6 @@ const firebaseDB = firebase.database();
 // // firebaseDB.ref().on('child_changed',(snapshot)=>{
   // console.log(snapshot.key,snapshot.val());
 // })
-firebaseDB.ref().on('child_added',(snapshot)=>{
-  console.log(snapshot.key,snapshot.val());
-})
+// firebaseDB.ref().on('child_added',(snapshot)=>{
+//   console.log(snapshot.key,snapshot.val());
+// })
